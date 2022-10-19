@@ -66,9 +66,7 @@ nav > div:first-child a{
     display: none;
     width: 100%;
 }
-nav #menu1:hover{
-    border-radius: 10px 0 0 0;
-}
+
 nav #menu3:hover{
     border-radius: 0 10px 0 0;
 }
