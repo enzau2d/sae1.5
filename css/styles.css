@@ -50,7 +50,7 @@ main article{
 footer{
     border-top: 1px solid white;
 }
-#art2, #art3{
+#art2, #art3, #art4{
     display: flex;
 }
 #divimg{
@@ -60,7 +60,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
 }
-#art2{
+#art2, #art4{
     flex-direction:row-reverse;
 }
 #img4, #img5{
