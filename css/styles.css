@@ -17,6 +17,7 @@ header{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    background-image: url(../images/gris2.png);
 }
 h1{
     margin-right: 5%;
