@@ -24,35 +24,34 @@ h3{
     border: 1px solid white;
     padding: 3px 7px;
 }
-h3:hover{
+h3:hover{ 
     background-color: white;
     color: #2B2B2B;
 }
 p{
     margin: 10px;
 }
-div{
+article{
     border-radius: 10px;
     margin-bottom: 7%;
-    display: flex;
     border-bottom: 1px solid white;
 }
 img{
     width: 20%;
     margin: 10px;
 }
-article{
+main{
     display: flex;
     flex-flow:wrap column;
 }
-article div{
+main div{
     background-color: #2B2B2B;
 }
 footer{
     border-top: 1px solid white;
 }
-#div1:nth-child(1){
-    display: block;
+#art2, #art3{
+    display: flex;
 }
 #divimg{
     border: none;
@@ -61,7 +60,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
 }
-#div2{
+#art2{
     flex-direction:row-reverse;
 }
 #img4, #img5{
