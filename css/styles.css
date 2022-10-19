@@ -1,3 +1,7 @@
+html{
+    scroll-behaviour: smooth;
+}
+
 body{
     width: 1000px;
     margin: auto;
@@ -18,17 +22,65 @@ header{
     flex-flow: row wrap;
     justify-content: space-between;
 }
+
 h1{
     margin-right: 5%;
 }
-h2{
-    border: 1px solid white;
+
+nav{
+    height: 60px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+nav > div{
+    margin-left: 2px;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    background-color: gainsboro;
+    align-items: center;
+}
+
+nav a{
     padding: 3px 7px;
+    width: 150px;
+    text-decoration: none;
+    color: darkslategray;
 }
-h2:hover{ 
-    background-color: white;
-    color: #2B2B2B;
+
+nav a:hover{
+    color: green;
 }
+
+nav > div:first-child a{
+    border: none;
+}
+
+.submenu{
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    background-color: lightgray;
+    display: none;
+    width: 100%;
+}
+
+nav #menu1:hover{
+    border-radius: 10px 0 0 0;
+}
+
+nav #menu3:hover{
+    border-radius: 0 10px 0 0;
+}
+
+nav > div:hover > div.submenu{
+    display: block;
+}
+
 p{
     margin: 10px;
 }
@@ -67,13 +119,21 @@ footer{
 #img4, #img5{
     min-width: 20%;
 }
-#img3, #img4, #head3{
+#img3, #img4, #menu3{
     border-radius: 0 10px 10px 0;
 }
-#img1, #img5, #head1{
+#img1, #img5, #menu1{
     border-radius: 10px 0 0 10px;
 }
 @font-face{
     font-family: Opensans;
     src: url(../Font/OpenSans.ttf);
+}
+
+.retourHaut{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
 }
