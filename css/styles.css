@@ -44,7 +44,7 @@ main{
     display: flex;
     flex-flow:wrap column;
 }
-main div{
+main article{
     background-color: #2B2B2B;
 }
 footer{
