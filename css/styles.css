@@ -75,6 +75,7 @@ nav > div:hover > div.submenu{
 }
 p{
     margin: 10px;
+    text-align: justify;
 }
 article{
     border-radius: 10px;
