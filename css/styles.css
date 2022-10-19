@@ -1,7 +1,6 @@
 html{
     scroll-behaviour: smooth;
 }
-
 body{
     width: 1000px;
     margin: auto;
@@ -22,11 +21,14 @@ header{
     flex-flow: row wrap;
     justify-content: space-between;
 }
-
 h1{
-    margin-right: 5%;
+    margin-right: 10%;
+    font-size: 165%;
 }
-
+h2{
+    border: 1px solid white;
+    padding: 3px 7px;
+    font-size: 150%;
 nav{
     height: 60px;
     margin: auto;
@@ -35,7 +37,6 @@ nav{
     align-items: stretch;
     justify-content: center;
 }
-
 nav > div{
     margin-left: 2px;
     display: flex;
@@ -44,22 +45,18 @@ nav > div{
     background-color: gainsboro;
     align-items: center;
 }
-
 nav a{
     padding: 3px 7px;
     width: 150px;
     text-decoration: none;
     color: darkslategray;
 }
-
 nav a:hover{
     color: green;
 }
-
 nav > div:first-child a{
     border: none;
 }
-
 .submenu{
     position: absolute;
     top: 60px;
@@ -68,19 +65,15 @@ nav > div:first-child a{
     display: none;
     width: 100%;
 }
-
 nav #menu1:hover{
     border-radius: 10px 0 0 0;
 }
-
 nav #menu3:hover{
     border-radius: 0 10px 0 0;
 }
-
 nav > div:hover > div.submenu{
     display: block;
 }
-
 p{
     margin: 10px;
 }
@@ -102,6 +95,13 @@ main article{
 }
 footer{
     border-top: 1px solid white;
+}
+.retourHaut{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
 }
 #art2, #art3, #art4{
     display: flex;
@@ -128,12 +128,4 @@ footer{
 @font-face{
     font-family: Opensans;
     src: url(../Font/OpenSans.ttf);
-}
-
-.retourHaut{
-    height: 40px;
-    width: 40px;
-    position: fixed;
-    right: 5px;
-    bottom: 5px;
 }
