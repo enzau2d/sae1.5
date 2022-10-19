@@ -6,8 +6,9 @@ body{
     color: #F8F8F8;
     font-family: Opensans;
     word-spacing: 110%;
-    background-image: url(../images/gris2.png);    
-}3
+    background-image: url(../images/gris2.png);
+    background-size : auto;
+}
 header{
     margin-bottom:15%;
     background-color: #2B2B2B;
