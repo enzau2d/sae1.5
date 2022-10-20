@@ -19,6 +19,7 @@ header{
     user-select: none;
     display: flex;
     flex-flow: row wrap;
+    font-family: 'Times New Roman', serif;
 }
 h1{
     margin-right: 8%;
