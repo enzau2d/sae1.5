@@ -24,6 +24,7 @@ h1{
     margin-right: 8%;
     font-size: 175%;
     font-family: 'Times New Roman', serif;
+    text-shadow:0 0 3px #ffffff,0 0 35px #ffffff,0px 0px 5px #ffffff, 0 0 350px #ffffff;color:#ffffff;
 }
 nav{
     margin: auto;
