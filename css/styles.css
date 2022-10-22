@@ -2,14 +2,14 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    width: 1000px;
+    width: 1100px;
     margin: auto;
     font-size: 130%;
     background-color: #181818;
     color: #F8F8F8;
     font-family: Opensans;
     word-spacing: 110%;
-    background-image: url(../images/gris2.png);
+    background-image: url(../images/gris.png);
 }
 header{
     margin-bottom:15%;
@@ -21,10 +21,11 @@ header{
     flex-flow: row wrap;
 }
 h1{
-    margin-right: 8%;
+    margin-right: 5%;
     font-size: 175%;
     font-family: 'Times New Roman', serif;
-    text-shadow:0 0 3px #ffffff,0 0 35px #ffffff,0px 0px 5px #ffffff, 0 0 350px #ffffff;color:#ffffff;
+    text-shadow:0 0 5px, 0 0 30px #F8F8F8;
+    color:#F8F8F8;
 }
 nav{
     margin: auto;
@@ -38,7 +39,7 @@ nav > div{
     align-items: center;
     border: 1px solid #F8F8F8;
 }
-nav a{
+a{
     text-decoration: none;
     color: #F8F8F8;
 }
@@ -61,11 +62,6 @@ p{
     margin: 10px;
     text-align: justify;
 }
-article{
-    border-radius: 10px;
-    margin-bottom: 7%;
-    border-bottom: 1px solid white;
-}
 img{
     width: 20%;
     margin: 10px;
@@ -74,14 +70,19 @@ main{
     display: flex;
     flex-flow:wrap column;
 }
-main article{
+main article, aside{
     background-color: #2B2B2B;
+    border-radius: 10px;
+    margin-bottom: 7%;
+    border-bottom: 1px solid white;
 }
 footer{
     border-top: 1px solid #F8F8F8;
 }
-.submenu a:hover{
-    color: #b9b9b9;
+iframe{
+    width:600;
+    height:450;
+    border-radius: 10px;
 }
 .submenu{
     position: absolute;
@@ -93,6 +94,28 @@ footer{
     width: 100%;
     text-align: center;
 }
+.sub{
+    display: inline-block;
+    position: relative;
+    color: #b9b9b9;
+    margin-bottom: 2px;
+  } 
+.sub:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #b9b9b9;
+    transform-origin: bottom right;
+    transition: transform 0.24s ease-out;
+  }
+.sub:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 .menu{
     padding: 3px 7px;
     font-size: 150%;
@@ -101,8 +124,14 @@ footer{
     height: 40px;
     width: 40px;
     position: fixed;
-    right: 5px;
-    bottom: 5px;
+    right: 1%;
+    bottom: 1%;
+}
+.gif{
+    width: 50px;
+}
+.gif:nth-child(3){
+    width: 60px;
 }
 #submenu2{
     border-bottom-right-radius: 10px;
@@ -113,7 +142,7 @@ footer{
 #art2, #art3, #art4{
     display: flex;
 }
-#divimg{
+#art1img{
     border: none;
     margin-bottom: 0px;
     display: flex;
@@ -123,10 +152,10 @@ footer{
 #art2, #art4{
     flex-direction:row-reverse;
 }
-#img4, #img5{
+#img4, #img5, #img6{
     min-width: 20%;
 }
-#img3, #img4, #menu3{
+#img3, #img4, #img6, #menu3{
     border-radius: 0 10px 10px 0;
 }
 #img1, #img5, #menu1{
@@ -135,4 +164,12 @@ footer{
 @font-face{
     font-family: Opensans;
     src: url(../Font/OpenSans.ttf);
+}
+aside p{
+    display: inline;
+}
+#find{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
