@@ -19,6 +19,7 @@ header{
     user-select: none;
     display: flex;
     flex-flow: row wrap;
+    position:sticky;
 }
 h1{
     margin-right: 5%;
