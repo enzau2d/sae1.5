@@ -62,6 +62,7 @@ nav > div:nth-child(3){
     border-radius: 0 10px 10px 0;;
 }
 a{
+    user-select: none;
     text-decoration: none;
     color: #F8F8F8;
 }
@@ -125,7 +126,6 @@ img{
     display: flex;
 }
 #art1img{
-    border: none;
     margin-bottom: 0px;
     display: flex;
     flex-direction: row;
@@ -202,6 +202,19 @@ textarea{
 .reservation:hover{
     background-color: rgb(230, 240, 230);
     color: black;
+}
+.nbparticipants{
+    margin-left: -4px;
+}
+#reclamer{
+    padding-top: 1px;
+    color: #F8F8F8;
+    border: 1px solid #F8F8F8;
+    background-color: #2B2B2B;
+}
+#reclamer:hover{
+    color: #2B2B2B;
+    background-color: #F8F8F8
 }
 .retourHaut{
     height: 40px;
