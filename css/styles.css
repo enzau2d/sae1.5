@@ -167,6 +167,17 @@ footer > div > div:first-child{
     font-size: 30px;
     font-weight: bold;
 }
+.coo{
+    display:flex;
+}
+.coo span{
+    display: flex;
+    align-items: center;
+}
+.cee{
+    display: flex;
+    flex-direction: column;
+}
 iframe{
     margin: 10px 20px 0 0;
     width:300px;
@@ -196,8 +207,7 @@ textarea{
     border: 2px solid rgb(107, 106, 106);
     border-radius: 10px;
     color: white;
-    font-size: 20px;
-    
+    font-size: 20px;    
 }
 .reservation:hover{
     background-color: rgb(230, 240, 230);
@@ -222,15 +232,4 @@ textarea{
     position: fixed;
     right: 1%;
     bottom: 1%;
-}
-.coo{
-    display:flex;
-}
-.coo span{
-    display: flex;
-    align-items: center;
-}
-.cee{
-    display: flex;
-    flex-direction: column;
 }
