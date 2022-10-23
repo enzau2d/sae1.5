@@ -210,3 +210,14 @@ textarea{
     right: 1%;
     bottom: 1%;
 }
+.coo{
+    display:flex;
+}
+.coo span{
+    display: flex;
+    align-items: center;
+}
+.cee{
+    display: flex;
+    flex-direction: column;
+}
