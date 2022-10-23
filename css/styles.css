@@ -167,16 +167,16 @@ footer > div > div:first-child{
     font-size: 30px;
     font-weight: bold;
 }
-.coo{
-    display:flex;
-}
-.coo span{
-    display: flex;
-    align-items: center;
-}
-.cee{
+footer > div:nth-child(2){
     display: flex;
     flex-direction: column;
+}
+footer > div > div{
+    display:flex;
+}
+footer > div > div span{
+    display: flex;
+    align-items: center;
 }
 iframe{
     margin: 10px 20px 0 0;
